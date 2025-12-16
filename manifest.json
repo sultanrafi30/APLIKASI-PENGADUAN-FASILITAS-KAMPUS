@@ -1,0 +1,24 @@
+{
+  "name": "Pengaduan Fasilitas Polmed",
+  "short_name": "Polmed",
+  "description": "Laporkan kerusakan fasilitas kampus secara cepat & transparan",
+  "start_url": "/polmed-pengaduan/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a8a",
+  "icons":
+   [
+    {
+      "src": "assets/img/logopolmed.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/logopolmed.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+  
+}

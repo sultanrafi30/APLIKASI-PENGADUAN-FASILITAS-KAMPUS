@@ -1,0 +1,112 @@
+/* assets/css/style.css — VERSI FINAL SESUAI HEADER/FOOTER KAMU */
+:root {
+  --primary: #6a5acd;        /* Ungu utama */
+  --primary-light: #8a7fd4;
+  --primary-dark: #4a3a9c;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --white: #ffffff;
+  --gray-100: #f8fafc;
+  --gray-200: #e2e8f0;
+  --gray-700: #334155;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --border-radius: 16px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--white);
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* 🟦 Navbar tweak */
+.navbar-brand, .nav-link {
+  color: #0f172a !important;
+}
+.nav-link.active, .nav-link:hover {
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+/* 📦 Card */
+.card {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.card-header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+}
+
+/* 🎯 Statistik */
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow);
+}
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* 📝 Form & Button */
+.btn {
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 0.6rem 1.5rem;
+}
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+.form-control {
+  border-radius: 12px;
+  border: 1px solid var(--gray-200);
+}
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(106, 90, 205, 0.25);
+}
+
+/* 🏷️ Badge Status */
+.badge.bg-selesai { background-color: var(--success); color: white; }
+.badge.bg-menunggu { background-color: var(--warning); color: white; }
+.badge.bg-diproses { background-color: var(--primary); color: white; }
+.badge.bg-ditolak { background-color: var(--danger); color: white; }
+
+/* 📱 Responsif */
+@media (max-width: 768px) {
+  .card { margin-bottom: 1rem; }
+  .stat-card { margin-bottom: 1rem; }
+}
+
+/* 🖨️ Print-friendly */
+@media print {
+  .no-print { display: none !important; }
+  body { background: none; }
+  .card { box-shadow: none; border: 1px solid #000; }
+}
